@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(name = "api/inmueble")
+@RequestMapping("api/inmueble")
 public class InmuebleController {
 
     @Autowired
@@ -19,7 +19,7 @@ public class InmuebleController {
         return new ResponseEntity<>(inmuebleService.saveInmueble(inmueble), HttpStatus.CREATED);
     }
 
-    @DeleteMapping(name = "{inmuebleId}")
+    @DeleteMapping("{inmuebleId}")
     public ResponseEntity<?> deleteInmueble(@PathVariable Long inmuebleId){
         inmuebleService.deleteInmueble(inmuebleId);
         return new ResponseEntity<>(HttpStatus.OK);
