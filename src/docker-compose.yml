@@ -22,15 +22,15 @@ services:
     depends_on:
       - postgres
 
- # mysqlDB:
- #   image: mysql:8.0.32
- #   restart: always
- #   ports:
- #     - "3306:3306"
- #   environment:
- #     - MYSQL_ROOT_PASSWORD=root
- #     - MYSQL_DATABASE=root
- #     - MYSQL_DATABASE=clientes
+  # mysqlDB:
+  #   image: mysql:8.0.32
+  #   restart: always
+  #   ports:
+  #     - "3306:3306"
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=root
+  #     - MYSQL_DATABASE=root
+  #     - MYSQL_DATABASE=clientes
 
 #  mysql-workbench:
 #    image: lscr.io/linuxserver/mysql-workbench:latest
